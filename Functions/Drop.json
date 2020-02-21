@@ -1,0 +1,18 @@
+{
+    "fun_name": "drop",
+    "fun_def": "Choose columns to drop",
+    "order": [
+        {
+            "name": "Columns",
+            "input_type": "input_box/dropdown",
+            "attr": "col",
+            "descrption": "Select the columns"
+        },
+        {
+            "name": "add",
+            "input_type": "button",
+            "attr": "apply function"
+        }
+    ],
+    "scalaCode": "df.drop('col')"
+}

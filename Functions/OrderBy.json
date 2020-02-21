@@ -1,0 +1,18 @@
+{
+    "fun_name": "orderBy",
+    "fun_def": "Sort the data",
+    "order": [
+        {
+            "name": "Columns",
+            "input_type": "input_box/dropdown",
+            "attr": "list",
+            "descrption": "Select the columns to order"
+        },
+        {
+            "name": "add",
+            "input_type": "button",
+            "attr": "apply function"
+        }
+    ],
+    "scalaCode": "df.sortBy('list')"
+}

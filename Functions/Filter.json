@@ -1,0 +1,66 @@
+{
+    "fun_name": "Filter",
+    "fun_def": "Filter the data for required value",
+    "order": [
+        {
+            "name": "Columns",
+            "input_type": "dropdown",
+            "attr": "col_name",
+            "descrption": "Select the column to filter"
+        },
+        {
+            "name": "Operators",
+            "input_type": "dropdown",
+            "attr": "oprtr",
+            "options": [
+                {
+                    "name": "Equal",
+                    "value": "=="
+                },
+                {
+                    "name": "NotEqual",
+                    "value": "!="
+                },
+                {
+                    "name": "GreaterThan",
+                    "value": ">"
+                },
+                {
+                    "name": "LessThan",
+                    "value": "<"
+                },
+                {
+                    "name": "GreaterThanOrEqual",
+                    "value": ">="
+                },
+                {
+                    "name": "LessThanOrEqual",
+                    "value": "<="
+                },
+                {
+                    "name": "IN",
+                    "value": "IN [list3]"
+                }
+            ],
+            "descrption": "Select the condition"
+        },
+        {
+            "name": "Value",
+            "input_type": "input_box/dropdown",
+            "attr": "value",
+            "options": [
+                "Value",
+                "MAX(col-name)",
+                "MIN(col-name)",
+                "AVG(col-name)"
+            ],
+            "descrption": "Select the value to check"
+        },
+        {
+            "name": "add",
+            "input_type": "button",
+            "attr": "apply function"
+        }
+    ],
+    "scalaCode": "df.filter(df('col_name') oprtr 'value')"
+}

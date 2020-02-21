@@ -1,0 +1,18 @@
+{
+    "fun_name": "GroupBy",
+    "fun_def": "Aggregates the data by grouping the columns",
+    "order": [
+        {
+            "name": "Columns",
+            "input_type": "input_box/dropdown",
+            "attr": "list",
+            "descrption": "Select the columns to group"
+        },
+        {
+            "name": "add",
+            "input_type": "button",
+            "attr": "apply function"
+        }
+    ],
+    "scalaCode": "df.groupBy('list').count()"
+}

@@ -1,0 +1,18 @@
+{
+    "fun_name": "select",
+    "fun_def": "Choose required columns",
+    "order": [
+        {
+            "name": "Columns",
+            "input_type": "input_box/dropdown",
+            "attr": "list",
+            "descrption": "Select the columns"
+        },
+        {
+            "name": "add",
+            "input_type": "button",
+            "attr": "apply function"
+        }
+    ],
+    "scalaCode": "df.select('list')"
+}
